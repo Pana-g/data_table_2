@@ -70,6 +70,21 @@ class DataTable2DemoState extends State<DataTable2Demo> {
       padding: const EdgeInsets.all(16),
       child: DataTable2(
         columnSpacing: 12,
+        sortArrowAlwaysVisible: true,
+        /* sortArrowBuilder: (ascending, sorted) => Row(
+          children: [
+            Icon(
+              Icons.arrow_drop_down_rounded,
+              size: 32,
+              color: !ascending && sorted ? Colors.cyan : null,
+            ),
+            Icon(
+              Icons.arrow_drop_up_rounded,
+              size: 32,
+              color: ascending && sorted ? Colors.cyan : null,
+            )
+          ],
+        ), */
         horizontalMargin: 12,
         border: getCurrentRouteOption(context) == fixedColumnWidth
             ? TableBorder(
